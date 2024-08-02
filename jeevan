@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="jeevan.css">
+    <title>kannan</title>
+  
+</head>
+<body>
+    <h1>instagram login</h1>
+    
+    <form id="loginForm" action="WELCOME.HTML" METHORD="GET"  target="_blank"> 
+        <label class="bro">username</label>
+        <input type="username" id ="username" >
+        <br>
+        <label class="pass">password</label>
+        <input type="password" id="password">
+        <br>
+        <select>
+            <option>select page</option>
+            <option>instagram</option>
+            <option>facebook</option>
+        </select>
+        <br>
+        <button type="submit">login</button>
+    </form>
+    <script>
+            document.getElementById('loginForm').onsubmit = function(event) {event.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Basic client-side validation
+            if (!username || !password) {
+                alert('Both username and password are required.');
+                return;
+            }
+
+            if(username !='_jeev_.an_'||password!='Jeevan@123'){
+                alert('Wrong password and username')
+            }
+            this.submit();
+        }
+
+    </script>
+    
+</body>
+</html>
+
